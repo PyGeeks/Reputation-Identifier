@@ -105,7 +105,7 @@ class Url(comman_class):
         df = pd.DataFrame(data)
         if mode is True:
             if filepath is not None:
-                f3 = df.to_csv(file_path, index=False)
+                f3 = df.to_csv(filepath, index=False)
                 return 'file created'
             else:
                 print('path must be not empty')
